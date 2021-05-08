@@ -1,0 +1,30 @@
+footer {
+  background-color: #3b3b3b;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  color: white;
+}
+footer h2 {
+  margin-left: 15px;
+  padding-top: 20px;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 18px;
+}
+footer .fas {
+  padding-right: 10px;
+}
+footer .fa-utensils {
+  padding-right: 17px;
+}
+footer ul {
+  margin-bottom: 0px;
+}
+footer li {
+  list-style-type: none;
+  padding-top: 10px;
+  margin-left: -25px;
+}
+footer li a {
+  color: white;
+  text-align: center;
+}/*# sourceMappingURL=footer.css.map */

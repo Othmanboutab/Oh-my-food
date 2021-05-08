@@ -1,0 +1,257 @@
+@import "/sass/variable.scss";
+body {
+  margin: 0px;
+  position: relative;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+header {
+  @include flexbox();
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  background-color: $grisclair;
+}
+
+.header-p {
+  font-family: "Shrikhand", sans-serif;
+  display: flex;
+  font-size: 32px;
+  align-self: center;
+  margin: 10px 0px 0px 0px;
+
+  p {
+    margin: 0px;
+    align-items: center;
+  }
+}
+
+.header-bouton {
+  background: none;
+  border: none;
+  align-self: center;
+  margin-top: 10px;
+  position: absolute;
+  left: 10px;
+}
+
+.header-image {
+  width: 100%;
+  height: 277px;
+  object-fit: cover;
+}
+
+main {
+  background-color: $grisclair;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px 60px 0 0;
+  position: absolute;
+  top: 300px;
+  width: 100%;
+
+  .main-titre-coeur {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      margin-right: 10px;
+      font-family: "Shrikhand", sans-serif;
+    }
+
+    .far {
+      font-size: 30px;
+      cursor: pointer;
+
+      &:hover {
+        font-weight: bold;
+        background: -webkit-linear-gradient($primaire, $secondaire 50%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-position-y: 1.8rem;
+        cursor: pointer;
+        animation: fill 0.6s ease-in-out;
+      }
+    }
+  }
+
+  .section-entree,
+  .section-plat,
+  .section-dessert {
+    padding-left: 20px;
+
+    h3 {
+      @include titreh3;
+    }
+
+    h4 {
+      @include titreh4();
+    }
+
+    .menu-content {
+      @include article;
+    }
+
+    .cross {
+      @include cross;
+    }
+
+    .menu-content-titre {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .entree,
+    .plat,
+    .dessert {
+      @include description();
+
+      p {
+        @include titre;
+      }
+
+      .prix {
+        @include prix;
+      }
+    }
+  }
+
+  .bouton {
+    @include flexbox();
+    margin-top: 20px;
+  }
+
+  .button {
+    background: $gradient;
+    border-radius: 25px;
+    color: white;
+    height: 40px;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    padding: 0 40px;
+    width: 100px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+@include desktop {
+  header {
+    position: fixed;
+  }
+
+  .header-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  main {
+    .main-titre-coeur {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+    .article {
+      flex-direction: column;
+      @include flexbox();
+    }
+    .section-entree,
+    .section-plat,
+    .section-dessert {
+      padding-left: 20px;
+
+      h3 {
+        @include titreh3;
+        width: 100%;
+        @include flexbox();
+      }
+
+      h4 {
+        @include titreh4();
+      }
+
+      .menu-content {
+        width: 50%;
+      }
+      .entree,
+      .plat,
+      .dessert {
+        @include description();
+
+        p {
+          @include titre;
+        }
+
+        .prix {
+          @include prix;
+        }
+      }
+    }
+    footer {
+      flex-direction: row;
+      @include flexbox();
+
+      h2 {
+        margin-left: 0px;
+        font-size: 34px;
+      }
+
+      li {
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+@include tablette {
+  body {
+    position: relative;
+
+    .header-image {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    main {
+      background-color: $grisclair;
+      align-items: center;
+      justify-content: center;
+      border-radius: 60px 60px 0 0;
+      position: absolute;
+      top: 210px;
+      width: 100%;
+
+      h3 {
+        @include titreh3;
+        width: 5%;
+      }
+
+      footer {
+        flex-direction: row;
+        @include flexbox();
+
+        h2 {
+          margin-left: 0px;
+          font-size: 34px;
+        }
+
+        li {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}

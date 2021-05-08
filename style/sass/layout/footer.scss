@@ -1,0 +1,36 @@
+@import "/sass/scss/loader.scss";
+
+footer {
+  background-color: rgb(59, 59, 59);
+  margin-top: 50px;
+  padding-bottom: 30px;
+  color: white;
+
+  h2 {
+    margin-left: 15px;
+    padding-top: 20px;
+    font-family: "Shrikhand", sans-serif;
+    font-size: 18px;
+  }
+
+  .fas {
+    padding-right: 10px;
+  }
+  .fa-utensils {
+    padding-right: 17px;
+  }
+
+  ul {
+    margin-bottom: 0px;
+  }
+  li {
+    list-style-type: none;
+    padding-top: 10px;
+    margin-left: -25px;
+  }
+
+  li a {
+    color: white;
+    text-align: center;
+  }
+}
