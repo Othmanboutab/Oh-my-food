@@ -1,4 +1,5 @@
-@import "/sass/variable.scss";
+@import "style";
+
 body {
   margin: 0px;
   position: relative;
@@ -69,15 +70,15 @@ main {
     .far {
       font-size: 30px;
       cursor: pointer;
+      opacity: 0.2;
 
       &:hover {
         font-weight: bold;
-        background: -webkit-linear-gradient($primaire, $secondaire 50%);
+        background: $gradient;
         background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-position-y: 1.8rem;
-        cursor: pointer;
-        animation: fill 0.6s ease-in-out;
+        -webkit-text-fill-color: transparent; /* pour mettre le contour du coeur en transparent */
+        transition: all 2s ease-in-out;
+        opacity: 1;
       }
     }
   }

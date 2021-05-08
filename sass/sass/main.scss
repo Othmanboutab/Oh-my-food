@@ -1,7 +1,5 @@
-@import "/sass/variable";
-@import "/sass/mixin";
-@import "/sass/footer.scss";
-@import "/sass/loader.scss";
+@import "style";
+
 header p {
   font-family: $fontstylee;
   font-size: 22px;
@@ -217,12 +215,15 @@ body {
       position: absolute;
       right: 20px;
       bottom: 30px;
+      opacity: 0.2;
+
       &:hover {
         font-weight: bold;
         background: $gradient;
         background-clip: text;
         -webkit-text-fill-color: transparent; /* pour mettre le contour du coeur en transparent */
-        animation: fill 0.3s ease-in-out;
+        transition: all 2s ease-in-out;
+        opacity: 1;
       }
     }
   }

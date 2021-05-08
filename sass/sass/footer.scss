@@ -1,4 +1,7 @@
-@import "/sass/scss/loader.scss";
+@import "variable";
+@import "mixin";
+@import "animation";
+@import "loader";
 
 footer {
   background-color: rgb(59, 59, 59);
