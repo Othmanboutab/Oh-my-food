@@ -6,7 +6,7 @@ Troisième projet du parcours développeur web chez OpenClassrooms : "Dynamisez 
 
 L'objectif est de réaliser l'intégration de la maquette d'un site de réservation de restaurants nommé "Ohmyfood" (voir l'image ci-dessous), avec des animations CSS.
 
-![image](https://github.com/Othmanboutab/Openclassroom_Projet-3-oh-my-food/blob/master/MaquettesOhmyfood/maquettes/Screenshot_2021-05-08%20Acceuil(1).png)
+![image](https://github.com/Othmanboutab/Othmanboutab-Openclassroom_Projet-3-oh-my-food/blob/main/MaquettesOhmyfood/maquettes/Screenshot_2021-05-08%20Acceuil(1).png)
 
 ## Technologies, logiciels et langages utilisés
 - Visual Studio Code
