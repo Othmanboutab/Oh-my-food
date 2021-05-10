@@ -92,6 +92,21 @@
   align-items: center;
 }
 
+@mixin coeur {
+  font-size: 30px;
+  cursor: pointer;
+  opacity: 0.2;
+
+  &:hover {
+    font-weight: bold;
+    background: $gradient;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* pour mettre le contour du coeur en transparent */
+    transition: all 2s ease-in-out;
+    opacity: 1;
+  }
+}
+
 @mixin desktop {
   @media screen and (min-width: 1024px) {
     @content;
