@@ -646,7 +646,6 @@ body a {
   background: -o-linear-gradient(top left, #ff79da, #9356dc);
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
   /* pour mettre le contour du coeur en transparent */
   -webkit-transition: all 2s ease-in-out;
